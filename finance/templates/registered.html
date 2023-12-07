@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Registered
+{% endblock %}
+
+{% if get_flashed_messages() %}
+    {{ get_flashed_messages() | join(" ") }}
+{% endif %}
